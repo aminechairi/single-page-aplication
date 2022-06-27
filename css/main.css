@@ -1,0 +1,65 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+  color: initial;
+  display: block;
+}
+/* a:hover {
+  cursor: default;
+} */
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+  color: var(--colo-white);  
+} 
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+} li {
+  margin: 0;
+  padding: 0; 
+}
+
+/* start container */
+.ctn {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+} 
+/*s end container */
+
+/* start media query  */
+/* Small */
+@media (min-width: 768px) {
+  .ctn {
+      width: 750px;
+      /* background-color: burlywood; */
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .ctn {
+      width: 970px;
+      /* background-color: brown; */
+  }
+}
+  /* Large */
+@media (min-width: 1200px) {
+  .ctn {
+      width: 1170px;
+      /* background-color: blue; */
+  }
+}
+/* end media query */
