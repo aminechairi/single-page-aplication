@@ -421,3 +421,77 @@ nav_page.list_btns[3].addEventListener(`click`, () => {
     data_users()
   }
 })
+nav_page.list_btns[4].addEventListener(`click`, () => {
+  let number_index = 4;
+  display(number_index);
+  if (nav_page.list_btns[number_index].dataset.click === `1 c`) {
+    display(number_index);    
+  } else {
+    async function data_albums() {
+        try {
+          let repo_data = document.getElementById(`repo_data_albums`);
+          repo_data.innerHTML = load;
+          let response = await fetch(`https://jsonplaceholder.typicode.com/albums`);
+          let response_json = await response.json();
+          let boxs = ``;
+          for (let i = 0; i < 12; i++) {
+            boxs += `
+            <div class="boxs">
+              <h1>${response_json[i].title}</h1>
+            </div>
+            `;
+          }
+          let division = `
+          <div class="box_albums">
+            <div class="ctn">
+              <div class="ab_boxs">
+                ${boxs}
+              </div>
+              <div class="show_more">
+                <div class="btn">
+                  show more
+                </div>
+              </div>
+            </div>
+          </div>
+          `;
+          repo_data.innerHTML = ``;
+          repo_data.innerHTML = division;
+          let boxs_elements = document.querySelectorAll(`.box_albums .ctn .ab_boxs .boxs`);
+          animation(boxs_elements);
+          let show_more = document.querySelectorAll(`.box_albums .ctn .show_more .btn`)[0];
+          let ab_boxs = document.querySelectorAll(`.box_albums .ctn .ab_boxs`)[0];
+          let show_more_number = 12;
+          let initial_loop = 0;
+          let plus_animation_show_more = 0;
+          show_more.addEventListener(`click`, () => {
+            let boxs = ``;
+            show_more_number += 12;
+            initial_loop += 12;
+            for (let i = initial_loop; i < show_more_number; i++) {
+              boxs += `
+                <div class="boxs">
+                  <h1>${response_json[i].title}</h1>
+                </div>
+              `;
+            }
+            ab_boxs.innerHTML += boxs;
+            let boxs_elements = document.querySelectorAll(`.box_albums .ctn .ab_boxs .boxs`);
+            let time_animation_show_more = 0;
+            plus_animation_show_more += 12;
+              for (let i = plus_animation_show_more; i < boxs_elements.length; i++) {
+                boxs_elements[i].style.opacity = `0`;
+                setTimeout(() => {
+                  boxs_elements[i].style.opacity = `1`;          
+                }, time_animation_show_more += 100);
+              }
+          })
+          nav_page.list_btns[number_index].dataset.click = `1 c`;
+        } catch (error) {
+          let repo_data = document.getElementById(`repo_data_albums`);
+            repo_data.innerHTML = Error;
+        }
+    }
+    data_albums();
+  }
+})

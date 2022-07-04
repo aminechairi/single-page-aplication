@@ -387,6 +387,54 @@ ul {
 
 
 
+/* albums */
+.box_albums .ctn .ab_boxs  {
+  padding: 40px 15px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  justify-content: center;
+  column-gap: 20px;
+  row-gap: 40px;
+}
+.box_albums .ctn .ab_boxs .boxs {
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 20px;
+  background-color: rgb(235, 236, 175);
+  transition: all 0.3s;
+}
+.box_albums .ctn .ab_boxs .boxs:hover {
+  box-shadow: 6px 6px 10px rgb(100, 100, 100);
+}
+.box_albums .ctn .ab_boxs .boxs h1 {
+  font-size: 22px;
+  text-transform: capitalize;
+  text-align: center;
+  color: black;
+  transition: all 0.3s;
+}
+.box_albums .ctn .show_more {
+  display: flex;
+  justify-content: center;
+  padding: 15px 0px;
+}
+.box_albums .ctn .show_more .btn {
+  font-size: 22px;
+  text-transform: capitalize;
+  padding: 20px 30px;
+  background-color: black;
+  color: #fff;
+  transition: 0.3s all;
+}
+.box_albums .ctn .show_more .btn:hover {
+  background-color: rgb(85, 85, 85);
+}
+/* albums */
+
+
+
+
+
 /* repos data */
 .repo_data {
   width: 100%;
