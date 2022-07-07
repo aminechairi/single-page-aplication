@@ -155,8 +155,22 @@ ul {
 
 
 /* photos */
+.box_photos .ctn .ab_input {
+  padding: 20px 0px 0px;
+}
+.box_photos .ctn .ab_input input {
+  width: 100%;
+  padding: 10px 10px;
+  font-size: 20px;
+  border-radius: 20px;
+  border: 1px solid black;
+}
+.box_photos .ctn .ab_input input:focus {
+  outline: none;
+  outline: 2px solid rgb(45, 112, 255);
+}
 .box_photos .ctn .ab_boxs {
-  padding: 40px 15px;
+  padding: 20px 15px 40px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
   justify-content: center;
@@ -204,8 +218,22 @@ ul {
 
 
 /* posts */
+.box_posts .ctn .ab_input {
+  padding: 20px 0px 0px;
+}
+.box_posts .ctn .ab_input input {
+  width: 100%;
+  padding: 10px 10px;
+  font-size: 20px;
+  border-radius: 20px;
+  border: 1px solid black;
+}
+.box_posts .ctn .ab_input input:focus {
+  outline: none;
+  outline: 2px solid rgb(45, 112, 255);
+}
 .box_posts .ctn .ab_boxs {
-  padding: 40px 15px;
+  padding: 20px 15px 40px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   justify-content: center;
@@ -257,8 +285,22 @@ ul {
 
 
 /* comments */
+.box_comments .ctn .ab_input {
+  padding: 20px 0px 0px;
+}
+.box_comments .ctn .ab_input input {
+  width: 100%;
+  padding: 10px 10px;
+  font-size: 20px;
+  border-radius: 20px;
+  border: 1px solid black;
+}
+.box_comments .ctn .ab_input input:focus {
+  outline: none;
+  outline: 2px solid rgb(45, 112, 255);
+}
 .box_comments .ctn .ab_boxs {
-  padding: 40px 15px;
+  padding: 20px 15px 40px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   justify-content: center;
@@ -313,8 +355,22 @@ ul {
 
 
 /* users */
+.box_users .ctn .ab_input {
+  padding: 20px 0px 0px;
+}
+.box_users .ctn .ab_input input {
+  width: 100%;
+  padding: 10px 10px;
+  font-size: 20px;
+  border-radius: 20px;
+  border: 1px solid black;
+}
+.box_users .ctn .ab_input input:focus {
+  outline: none;
+  outline: 2px solid rgb(45, 112, 255);
+}
 .box_users .ctn .ab_boxs {
-  padding: 40px 15px;
+  padding: 20px 15px 40px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   justify-content: center;
@@ -355,11 +411,11 @@ ul {
 .box_users .ctn .ab_boxs .boxs .div-1 .data_user .username {
   font-size: 22px;
   font-weight: 600;
+  margin-bottom: 12px;
 }
 .box_users .ctn .ab_boxs .boxs .div-1 .data_user .name {
   font-size: 22px;
   font-weight: 600;
-  margin-bottom: 12px;
 }
 .box_users .ctn .ab_boxs .boxs .div-1 .data_user p {
   font-size: 18px;
@@ -388,8 +444,22 @@ ul {
 
 
 /* albums */
+.box_albums .ctn .ab_input {
+  padding: 20px 0px 0px;
+}
+.box_albums .ctn .ab_input input {
+  width: 100%;
+  padding: 10px 10px;
+  font-size: 20px;
+  border-radius: 20px;
+  border: 1px solid black;
+}
+.box_albums .ctn .ab_input input:focus {
+  outline: none;
+  outline: 2px solid rgb(45, 112, 255);
+}
 .box_albums .ctn .ab_boxs  {
-  padding: 40px 15px;
+  padding: 20px 15px 40px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   justify-content: center;
@@ -505,3 +575,19 @@ ul {
   font-size: 80px;
 }
 /* error */
+
+
+
+
+
+
+/* no found */
+.no_found {
+  color: red;
+  font-size: 42px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 20px 0px;
+  display: none;
+}
+/* no found */
