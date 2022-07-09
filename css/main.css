@@ -123,10 +123,10 @@ ul {
   text-transform: capitalize;
   padding: 20px 15px;
   color: #fff;
-  transition: 0.3s all;
+  transition: 0.3s;
 }
 .nav-page .ctn .list li:hover {
-  background-color: rgb(85, 85, 85);
+  background-color: rgb(85, 85, 85) !important;
 }
 @media (min-width: 768px) {
   .nav-page {
@@ -505,7 +505,7 @@ ul {
 /* repos data */
 .repo_data {
   width: 100%;
-  position: absolute;
+  position: relative;
   background-color: #fff;
 }
 /* repos data */
@@ -580,6 +580,7 @@ ul {
 
 /* no found */
 .no_found {
+  height: calc(100vh - 65px - 65.3px - 68px);
   color: red;
   font-size: 42px;
   text-transform: uppercase;
@@ -588,3 +589,22 @@ ul {
   display: none;
 }
 /* no found */
+
+
+
+
+
+/* footer */
+.footer-page {
+  background-color: black;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-page h1 {
+  color: #fff;
+  font-size: 28px;
+  text-transform: capitalize;
+}
+/* footer */
