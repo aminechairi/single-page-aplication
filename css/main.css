@@ -125,9 +125,6 @@ ul {
   color: #fff;
   transition: 0.3s all;
 }
-.nav-page .ctn .list :nth-child(1) {
-  background-color: rgb(85, 85, 85);
-}
 .nav-page .ctn .list li:hover {
   background-color: rgb(85, 85, 85);
 }
